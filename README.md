@@ -1,3 +1,3 @@
 # explore-node
 
-This is project for exploring what needed.
+This is project for exploring what is needed.
