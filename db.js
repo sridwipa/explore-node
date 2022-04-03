@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 
 
-const exploreDB = mysql.createConnection({
+const explore_db = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
@@ -9,3 +9,6 @@ const exploreDB = mysql.createConnection({
 }).on("error", (err) => {
     console.log("Failed to connect Database : ", err);
 });
+
+
+module.exports = explore_db
