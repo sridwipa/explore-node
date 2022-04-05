@@ -9,7 +9,7 @@ const timezone = () => {
 
 const logFormat = winston.format.combine(
     winston.format.colorize(),
-    winston.format.timestamp({format: timezone}),
+    winston.format.timestamp({ format: timezone }),
     winston.format.align(),
     winston.format.printf(
         info => `${info.timestamp} ${info.level}: ${info.message}`
@@ -35,7 +35,7 @@ const logger = winston.createLogger({
     format: logFormat,
     transports: [
         transport,
-        new winston.transports.Console({ level: 'info', })
+        new winston.transports.Console({ level: 'info' })
     ]
 });
 
