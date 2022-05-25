@@ -1,9 +1,24 @@
 {
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "play": "nodemon index.js"
+  },
   "dependencies": {
+    "axios": "^0.26.1",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
     "uuid": "^8.3.2",
     "winston": "^3.6.0",
     "winston-daily-rotate-file": "^4.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

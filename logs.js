@@ -35,7 +35,7 @@ const logger = winston.createLogger({
     format: logFormat,
     transports: [
         transport,
-        new winston.transports.Console({ level: 'info' })
+        /*new winston.transports.Console({ level: 'info' })*/
     ]
 });
 
