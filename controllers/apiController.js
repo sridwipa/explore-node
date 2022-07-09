@@ -2,7 +2,7 @@ const axios = require('axios').default;
 const logger = require('../logs');
 
 
-exports.loginApi = async (req, res) => {
+exports.loginApi = async (req, res) => {p
 
 	const conf = {
 		method: "POST",
